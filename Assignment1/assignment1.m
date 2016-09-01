@@ -27,7 +27,7 @@ helpURL = ['http://www.mathworks.com/help/matlab/']
 
 % 2. What does the command 'clear all' do?
 %
-% Answer: Clears out all of the variables from the workspace 
+% Answer: It clears out all of the variables from the workspace 
 %
 
 
