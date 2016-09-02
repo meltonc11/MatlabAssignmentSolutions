@@ -50,9 +50,13 @@
 % 4.)vec6 = -5:-1
 %    vec7 = linspace(5,9,3)
 %    vec8 = linspace(8,4,3)
-% 6.) vec9 = (-1:0.5:1)'
-% 7.)
-% 8.)
+% 6.)vec9 = (-1:0.5:1)'
+% 7.)odd6 = vec6(1:2:end) %has odd number of total elements
+%    odd3 = vec3(1:2:end) %has even number of total elements
+% 8.)mat = [7:10; 12:-2:6]
+%    matex1 = mat(1,3)
+%    matex2 = mat(2,:)
+%    matex3 = mat(:, 1:2)
 % 9.)
 % 10.)
 % 12.)
