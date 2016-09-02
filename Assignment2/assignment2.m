@@ -57,10 +57,15 @@
 %    matex1 = mat(1,3)
 %    matex2 = mat(2,:)
 %    matex3 = mat(:, 1:2)
-% 9.)
-% 10.)
-% 12.)
-% 23.)
+% 9.)mat = [1:4; 4:7]
+%    numel(mat)
+% 10.)mat = [4:7; 1:4]
+%     mat(1,:) = [1:4]
+% 12.)rows = randi([1,5],1,1)
+%     cols = randi([1,5],1,1)
+%     zeromat = zeros(rows,cols)
+% 23.)vec23 = (3:2:11)
+%     sum23 = sum(vec23)
 % 26.)
 % 30.)
 % 31.)
