@@ -80,8 +80,17 @@
 %     max31 = max(max(mat31))
 
 %% Chapter 3 Exercises
-% 1.)
-% 4.)
+% 1.)RO= randi([10,15],1,1) %the outer radius randomly generated
+%    RI= randi([10,15],1,1)%the inner radius randomly generated
+%    volume = ((4*pi)/3)*((RO^3)-(RI^3)) %the volume of the hollow sphere based 
+%    on the randomly generated inner and outer radius
+% 4.)mat = input('Enter a matrix: ')
+%    Enter a matrix: randi([10,50],4,5)
+%    mat =
+%     35    49    49    27    36
+%     13    49    29    47    11
+%     21    16    42    42    44
+%     32    49    15    49    48
 % 6.)
 % 8.)
 % 13.)
