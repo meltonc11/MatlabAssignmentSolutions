@@ -91,6 +91,11 @@
 %     13    49    29    47    11
 %     21    16    42    42    44
 %     32    49    15    49    48
-% 6.)
+% 6.)A1 = 12345.6789
+%    fprintf('The real number is %f\n', A1)
+%    fprintf('The real number is %10.4f\n', A1)
+%    fprintf('The real number is %10.2f\n', A1)
+%    fprintf('The real number is %6.4f\n', A1)
+%    fprintf('The real number is %2.4f\n', A1)
 % 8.)
 % 13.)
