@@ -97,5 +97,15 @@
 %    fprintf('The real number is %10.2f\n', A1)
 %    fprintf('The real number is %6.4f\n', A1)
 %    fprintf('The real number is %2.4f\n', A1)
-% 8.)
-% 13.)
+% 8.)see attached flowrate .m file
+%    flowrate
+%    Enter the flow in m^3/s:15.2
+%    A flow rate of 15.200 meters per sec
+%    is equivalent to 542.857 feet per sec
+% 13.)see attached unit vector calculator .m file
+%     UnitVectorCalculator
+%     Enter in the velocity in the x direction:2.34
+%     Enter in the velocity in the y direction:4.244
+%     Enter in the velocity in the z direction:5.323
+%     uvec =
+%           0.3251    0.5895    0.7394
