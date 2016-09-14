@@ -39,6 +39,15 @@ spot2 = inputdlg(prompt2,response2)
 c2 = str2num(spot2{2})
 r2 = str2num(spot2{1})
 Board(r2,c2) = user
+if c2==c1 && r2==r1
+    ('Input new spot choice')
+   prompt2 = {'ROW (1, 2, or 3)', 'COLUMN (1, 2, or 3)'}
+   response2 = 'Error: You have entered a previously used spot. Please enter a different choice of row and column.'
+   spot2 = inputdlg(prompt2,response2)
+   c2 = str2num(spot2{2})
+   r2 = str2num(spot2{1})
+   Board(r2,c2) = user
+end
 %User is prompted for their third and final turn
 prompt3 = {'ROW (1, 2, or 3)', 'COLUMN (1, 2, or 3)'}
 response3 = 'Enter your choice of row and column.'
@@ -46,5 +55,32 @@ spot3 = inputdlg(prompt3,response3)
 c3 = str2num(spot3{2})
 r3 = str2num(spot3{1})
 Board(r3,c3) = user
+if c3==c1||c3==c2 && r3==r1||r3==r2
+    ('Input new spot choice')
+   prompt3 = {'ROW (1, 2, or 3)', 'COLUMN (1, 2, or 3)'}
+   response3 = 'Error: You have entered a previously used spot. Please enter a different choice of row and column.'
+   spot3 = inputdlg(prompt3,response3)
+   c3 = str2num(spot3{2})
+   r3 = str2num(spot3{1})
+    if c3==c1||c3==c2 && r3==r1||r3==r2
+        ('Input new spot choice')
+        prompt3 = {'ROW (1, 2, or 3)', 'COLUMN (1, 2, or 3)'}
+        response3 = 'Error: You have entered a previously used spot. Please enter a different choice of row and column.'
+        spot3 = inputdlg(prompt3,response3)
+        c3 = str2num(spot3{2})
+        r3 = str2num(spot3{1})
+        Board(r3,c3) = user
+        if c3==c1||c3==c2 && r3==r1||r3==r2
+        ('Input new spot choice')
+        prompt3 = {'ROW (1, 2, or 3)', 'COLUMN (1, 2, or 3)'}
+        response3 = 'Error: You have entered a previously used spot. Please enter a different choice of row and column.'
+        spot3 = inputdlg(prompt3,response3)
+        c3 = str2num(spot3{2})
+        r3 = str2num(spot3{1})
+        Board(r3,c3) = user
+        end
+    end
+   Board(r3,c3) = user
+end
 %%  Show Final Prompt with Game Result and a Finishing Message
 
