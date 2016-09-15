@@ -1,6 +1,6 @@
 % Caitlin Melton
 % Due Date: 09/15/16
-% KINE 6803: Matlab Assignment 2
+% KINE 6803: Assignment 2
 
 %% Chapter 1 Exercises
 % 1.)CuAW = 63.55
