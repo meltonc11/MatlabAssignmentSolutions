@@ -2,7 +2,7 @@
 %Caitlin Melton
 %9/13/16 
 %Due Date: 9/27/16
-%This script enables thex user to play a computer in a Tic Tac Toe match and
+%This script enables the user to play a computer in a Tic Tac Toe match and
 %will have the computer moves generated automatically
 
 %%  Welcome Message for the User
@@ -11,14 +11,12 @@ disp('Ready or Not, Here We Go!');
 Board = ['-' '-' '-'; '-' '-' '-'; '-' '-' '-'];
 disp(Board);
 %%  Player Chooses Which Character (either X or O)
-user = input('Do you want to be X or O? (Please enter your answer with uppercase letters):\n>','s');
+user = input('Do you want to be X or O? (Please enter your answer with uppercase/capital letters ONLY):\n>','s');
 if user == 'X';
     comp = 'O';
 else
     comp = 'X';
 end
-%%  Another Player Cannot Move into a taken spot
-
 %%  Computer Moves First
 % Randomly generates a row and column value
 c0 = randi([1,3]);
@@ -37,7 +35,6 @@ if Board(ruser1,cuser1) == '-';
    Board(ruser1,cuser1) = user;
 else
    disp('Input new spot choice');
-   prompt1 = {'ROW (1, 2, or 3)', 'COLUMN (1, 2, or 3)'};
    disp('Error: You have entered a previously used spot. Please enter a different choice of row and column.');
    spotuser1 = inputdlg(prompt1,response1);
    cuser1 = str2double(spotuser1{2});
@@ -46,7 +43,6 @@ else
    Board(ruser1,cuser1) = user;
    else
    disp('Input new spot choice');
-   prompt1 = {'ROW (1, 2, or 3)', 'COLUMN (1, 2, or 3)'};
    disp('Error: You have entered a previously used spot. Please enter a different choice of row and column.');
    spotuser1 = inputdlg(prompt1,response1);
    cuser1 = str2double(spotuser1{2});
@@ -55,7 +51,6 @@ else
    Board(ruser1,cuser1) = user;
     else
    disp('Input new spot choice');
-   prompt1 = {'ROW (1, 2, or 3)', 'COLUMN (1, 2, or 3)'};
    disp('Error: You have entered a previously used spot. Please enter a different choice of row and column.');
    spotuser1 = inputdlg(prompt1,response1);
    cuser1 = str2double(spotuser1{2});
@@ -64,7 +59,6 @@ else
    Board(ruser1,cuser1) = user;
     else
    disp('Input new spot choice');
-   prompt1 = {'ROW (1, 2, or 3)', 'COLUMN (1, 2, or 3)'};
    disp('Error: You have entered a previously used spot. Please enter a different choice of row and column.');
    spotuser1 = inputdlg(prompt1,response1);
    cuser1 = str2double(spotuser1{2});
