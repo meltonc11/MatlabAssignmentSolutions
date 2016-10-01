@@ -1,16 +1,16 @@
 %%Tic-Tac-Toe w/ Loops Script
 %Caitlin Melton
-%9/30/16 
+%10/1/16 
 %Due Date: 10/06/16
 %This script enables the user to play a computer in a Tic Tac Toe match and
 %will have the computer moves generated automatically utilizing loops.
 %%  Welcome Message for the User
-nextgame = 'Y'
-while nextgame == 'Y'
+nextgame = 'Y';
+while nextgame == 'Y';
 disp('Ready or Not, Here We Go!'); 
 %%  Show Game Board
 Board = ['-' '-' '-'; '-' '-' '-'; '-' '-' '-'];
-disp(Board);
+disp(Board)
 %%  Player Chooses Which Character (either X or O)
 user = input('Do you want to be X or O? (Please enter your answer with uppercase/capital letters ONLY):\n>','s');
 if user == 'X';
@@ -252,8 +252,43 @@ elseif Board(3,1) == user && Board(3,3) == user && Board(3,2) == '-';
     Board(3,2) = comp;
 elseif Board(3,2) == user && Board(3,3) == user && Board(3,1) == '-';
     Board(3,1) = comp;
+elseif Board(1,1) == '-'; %no strategic move available so computer puts it in the first available spot
+    Board(1,1) = comp;
+elseif Board(1,2) == '-';
+    Board(1,2) = comp;
+elseif Board(1,3) == '-';
+    Board(1,3) = comp;
+elseif Board(2,1) == '-';
+    Board(2,1) = comp;
+elseif Board(2,2) == '-';
+    Board(2,2) = comp;
+elseif Board(2,3) == '-';
+    Board(2,3) = comp;
+elseif Board(3,1) == '-';
+    Board(3,1) = comp;
+elseif Board(3,2) == '-';
+    Board(3,2) = comp;
+elseif Board(3,3) == '-';
+    Board(3,3) = comp;
 end
 disp(Board)
+if Board(1,1) == comp && Board(1,2) == comp && Board(1,3) == comp;
+    disp('Game Over. Computer Wins!')
+elseif Board(1,1) == comp && Board(2,1) == comp && Board(3,1) == comp;
+    disp('Game Over. Computer Wins!')
+elseif Board(1,1) == comp && Board(2,2) == comp && Board(3,3) == comp;
+    disp('Game Over. Computer Wins!')
+elseif Board(1,2) == comp && Board(2,2) == comp && Board(3,2) == comp;
+    disp('Game Over. Computer Wins!')
+elseif Board(1,3) == comp && Board(2,2) == comp && Board(3,1) == comp;
+    disp('Game Over. Computer Wins!')
+elseif Board(1,3) == comp && Board(2,3) == comp && Board(3,3) == comp;
+    disp('Game Over. Computer Wins!')
+elseif Board(2,1) == comp && Board(2,2) == comp && Board(2,3) == comp;
+    disp('Game Over. Computer Wins!')
+elseif Board(3,1) == comp && Board(3,2) == comp && Board(3,3) == comp;
+    disp('Game Over. Computer Wins!')
+else
 %%  Prompt User for Third Move
 disp('Please input your third spot choice into the pop up dialogue box.')
 spotuser3 = inputdlg(prompt1,response1);
@@ -270,6 +305,23 @@ ruser3 = str2double(spotuser3{1});
 end
 Board(ruser3,cuser3) = user;
 disp(Board)
+if Board(1,1) == user && Board(1,2) == user && Board(1,3) == user;
+    disp('Game Over. You Win!')
+elseif Board(1,1) == user && Board(2,1) == user && Board(3,1) == user;
+    disp('Game Over. You Win!')
+elseif Board(1,1) == user && Board(2,2) == user && Board(3,3) == user;
+    disp('Game Over. You Win!')
+elseif Board(1,2) == user && Board(2,2) == user && Board(3,2) == user;
+    disp('Game Over. You Win!')
+elseif Board(1,3) == user && Board(2,2) == user && Board(3,1) == user;
+    disp('Game Over. You Win!')
+elseif Board(1,3) == user && Board(2,3) == user && Board(3,3) == user;
+    disp('Game Over. You Win!')
+elseif Board(2,1) == user && Board(2,2) == user && Board(2,3) == user;
+    disp('Game Over. You Win!')
+elseif Board(3,1) == user && Board(3,2) == user && Board(3,3) == user;
+    disp('Game Over. You Win!')
+else
 %% Computer completes its fourth turn by trying to either put three in a row or block the user from doing so
 disp('Computer completes its fourth turn')
 if Board(1,1) == comp && Board(1,2) == comp && Board(1,3) == '-';
@@ -388,6 +440,23 @@ elseif Board(3,3) == '-';
     Board(3,3) = comp;
 end
 disp(Board)
+if Board(1,1) == comp && Board(1,2) == comp && Board(1,3) == comp;
+    disp('Game Over. Computer Wins!')
+elseif Board(1,1) == comp && Board(2,1) == comp && Board(3,1) == comp;
+    disp('Game Over. Computer Wins!')
+elseif Board(1,1) == comp && Board(2,2) == comp && Board(3,3) == comp;
+    disp('Game Over. Computer Wins!')
+elseif Board(1,2) == comp && Board(2,2) == comp && Board(3,2) == comp;
+    disp('Game Over. Computer Wins!')
+elseif Board(1,3) == comp && Board(2,2) == comp && Board(3,1) == comp;
+    disp('Game Over. Computer Wins!')
+elseif Board(1,3) == comp && Board(2,3) == comp && Board(3,3) == comp;
+    disp('Game Over. Computer Wins!')
+elseif Board(2,1) == comp && Board(2,2) == comp && Board(2,3) == comp;
+    disp('Game Over. Computer Wins!')
+elseif Board(3,1) == comp && Board(3,2) == comp && Board(3,3) == comp;
+    disp('Game Over. Computer Wins!')
+else
 %%  Prompt User for Fourth Move
 disp('Please input your fourth and final spot choice into the pop up dialogue box.')
 spotuser4 = inputdlg(prompt1,response1);
@@ -404,8 +473,25 @@ ruser4 = str2double(spotuser4{1});
 end
 Board(ruser4,cuser4) = user;
 disp(Board)
+if Board(1,1) == user && Board(1,2) == user && Board(1,3) == user;
+    disp('Game Over. You Win!')
+elseif Board(1,1) == user && Board(2,1) == user && Board(3,1) == user;
+    disp('Game Over. You Win!')
+elseif Board(1,1) == user && Board(2,2) == user && Board(3,3) == user;
+    disp('Game Over. You Win!')
+elseif Board(1,2) == user && Board(2,2) == user && Board(3,2) == user;
+    disp('Game Over. You Win!')
+elseif Board(1,3) == user && Board(2,2) == user && Board(3,1) == user;
+    disp('Game Over. You Win!')
+elseif Board(1,3) == user && Board(2,3) == user && Board(3,3) == user;
+    disp('Game Over. You Win!')
+elseif Board(2,1) == user && Board(2,2) == user && Board(2,3) == user;
+    disp('Game Over. You Win!')
+elseif Board(3,1) == user && Board(3,2) == user && Board(3,3) == user;
+    disp('Game Over. You Win!')
+else
 %% Computer completes its fifth turn by trying to either put three in a row or block the user from doing so
-disp('Computer completes its fifth turn')
+disp('Computer completes its fifth turn') %simply fills the last available slot
 if Board(1,1) == '-';
     Board(1,1) = comp;
 elseif Board(1,2) == '-';
@@ -440,5 +526,7 @@ if freecells == 0
 end
 nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 end
-
-
+end
+end
+end
+end
