@@ -1,11 +1,12 @@
 %%Tic-Tac-Toe w/ Loops Script
 %Caitlin Melton
-%9/29/16 
+%9/30/16 
 %Due Date: 10/06/16
 %This script enables the user to play a computer in a Tic Tac Toe match and
 %will have the computer moves generated automatically utilizing loops.
-
 %%  Welcome Message for the User
+nextgame = 'Y'
+while nextgame == 'Y'
 disp('Ready or Not, Here We Go!'); 
 %%  Show Game Board
 Board = ['-' '-' '-'; '-' '-' '-'; '-' '-' '-'];
@@ -437,6 +438,7 @@ end
 if freecells == 0
     disp('Game Over. It is a Draw.')
 end
-
+nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
+end
 
 
