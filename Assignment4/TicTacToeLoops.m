@@ -274,20 +274,28 @@ end
 disp(Board)
 if Board(1,1) == comp && Board(1,2) == comp && Board(1,3) == comp;
     disp('Game Over. Computer Wins!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,1) == comp && Board(2,1) == comp && Board(3,1) == comp;
     disp('Game Over. Computer Wins!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,1) == comp && Board(2,2) == comp && Board(3,3) == comp;
     disp('Game Over. Computer Wins!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,2) == comp && Board(2,2) == comp && Board(3,2) == comp;
     disp('Game Over. Computer Wins!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,3) == comp && Board(2,2) == comp && Board(3,1) == comp;
     disp('Game Over. Computer Wins!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,3) == comp && Board(2,3) == comp && Board(3,3) == comp;
     disp('Game Over. Computer Wins!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(2,1) == comp && Board(2,2) == comp && Board(2,3) == comp;
     disp('Game Over. Computer Wins!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(3,1) == comp && Board(3,2) == comp && Board(3,3) == comp;
     disp('Game Over. Computer Wins!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 else
 %%  Prompt User for Third Move
 disp('Please input your third spot choice into the pop up dialogue box.')
@@ -307,20 +315,28 @@ Board(ruser3,cuser3) = user;
 disp(Board)
 if Board(1,1) == user && Board(1,2) == user && Board(1,3) == user;
     disp('Game Over. You Win!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,1) == user && Board(2,1) == user && Board(3,1) == user;
     disp('Game Over. You Win!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,1) == user && Board(2,2) == user && Board(3,3) == user;
     disp('Game Over. You Win!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,2) == user && Board(2,2) == user && Board(3,2) == user;
     disp('Game Over. You Win!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,3) == user && Board(2,2) == user && Board(3,1) == user;
     disp('Game Over. You Win!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,3) == user && Board(2,3) == user && Board(3,3) == user;
     disp('Game Over. You Win!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(2,1) == user && Board(2,2) == user && Board(2,3) == user;
     disp('Game Over. You Win!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(3,1) == user && Board(3,2) == user && Board(3,3) == user;
     disp('Game Over. You Win!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 else
 %% Computer completes its fourth turn by trying to either put three in a row or block the user from doing so
 disp('Computer completes its fourth turn')
@@ -442,20 +458,28 @@ end
 disp(Board)
 if Board(1,1) == comp && Board(1,2) == comp && Board(1,3) == comp;
     disp('Game Over. Computer Wins!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,1) == comp && Board(2,1) == comp && Board(3,1) == comp;
     disp('Game Over. Computer Wins!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,1) == comp && Board(2,2) == comp && Board(3,3) == comp;
     disp('Game Over. Computer Wins!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,2) == comp && Board(2,2) == comp && Board(3,2) == comp;
     disp('Game Over. Computer Wins!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,3) == comp && Board(2,2) == comp && Board(3,1) == comp;
     disp('Game Over. Computer Wins!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,3) == comp && Board(2,3) == comp && Board(3,3) == comp;
     disp('Game Over. Computer Wins!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(2,1) == comp && Board(2,2) == comp && Board(2,3) == comp;
     disp('Game Over. Computer Wins!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(3,1) == comp && Board(3,2) == comp && Board(3,3) == comp;
     disp('Game Over. Computer Wins!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 else
 %%  Prompt User for Fourth Move
 disp('Please input your fourth and final spot choice into the pop up dialogue box.')
@@ -475,20 +499,28 @@ Board(ruser4,cuser4) = user;
 disp(Board)
 if Board(1,1) == user && Board(1,2) == user && Board(1,3) == user;
     disp('Game Over. You Win!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,1) == user && Board(2,1) == user && Board(3,1) == user;
     disp('Game Over. You Win!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,1) == user && Board(2,2) == user && Board(3,3) == user;
     disp('Game Over. You Win!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,2) == user && Board(2,2) == user && Board(3,2) == user;
     disp('Game Over. You Win!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,3) == user && Board(2,2) == user && Board(3,1) == user;
     disp('Game Over. You Win!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(1,3) == user && Board(2,3) == user && Board(3,3) == user;
     disp('Game Over. You Win!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(2,1) == user && Board(2,2) == user && Board(2,3) == user;
     disp('Game Over. You Win!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 elseif Board(3,1) == user && Board(3,2) == user && Board(3,3) == user;
     disp('Game Over. You Win!')
+    nextgame = input('Do you want to play a new game? (Please enter a capital Y for yes or a capital N for no.):\n>','s');
 else
 %% Computer completes its fifth turn by trying to either put three in a row or block the user from doing so
 disp('Computer completes its fifth turn') %simply fills the last available slot
