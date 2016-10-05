@@ -136,6 +136,24 @@ elseif Board(3,3) == comp && Board(3,1) == '-';
     Board(3,1) = comp;
 elseif Board(3,3) == comp && Board(1,3) == '-';
     Board(1,3) = comp;
+elseif Board(1,1) == '-'; %no strategic move available so computer puts it in the first available spot
+    Board(1,1) = comp;
+elseif Board(1,2) == '-';
+    Board(1,2) = comp;
+elseif Board(1,3) == '-';
+    Board(1,3) = comp;
+elseif Board(2,1) == '-';
+    Board(2,1) = comp;
+elseif Board(2,2) == '-';
+    Board(2,2) = comp;
+elseif Board(2,3) == '-';
+    Board(2,3) = comp;
+elseif Board(3,1) == '-';
+    Board(3,1) = comp;
+elseif Board(3,2) == '-';
+    Board(3,2) = comp;
+elseif Board(3,3) == '-';
+    Board(3,3) = comp;
 end
 disp(Board)
 %%  Prompt User for Second Move
