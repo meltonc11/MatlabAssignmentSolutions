@@ -3,7 +3,7 @@
 %   10/4/2016
 %   Due Date: October 20
 
-%uses the import function to separate data into variables
+%Uses the import function to separate data into variables
 [SubjectID,Age,Gender,Weight,Day1,Day2,Day3] = importfile('isok_data_6803.csv');
 %uses the genderIsoCalc function to calculate gender individual and group
 %means
