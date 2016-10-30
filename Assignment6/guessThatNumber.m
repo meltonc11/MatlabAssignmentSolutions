@@ -65,8 +65,8 @@ end
 
 % randomly select secret number between 1 and highest for level of play
 
-secretNumber = 1 + (highest - 1).*rand(1);     %Could not guess number so found this bug that was creating a number outside the actual limits given. Changed the structure of the rand function to be right.
-secretNumber = floor(secretNumber);
+secretNumber = floor(1 + (highest - 1).*rand(1));     %Could not guess number so found this bug that was creating a number outside the actual limits given. Changed the structure of the rand function to be right.
+
 % initialize number of guesses and User_guess
 
 numOfTries = 1;
